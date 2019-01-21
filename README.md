@@ -1,5 +1,10 @@
 # opencart-boilerplate
 
+## Extensions
+
+- 
+
+
 ### Quick checkout redirect when 0 products
 ```php
 // catalog/controller/extension/quickcheckout/cart.php
@@ -8,6 +13,20 @@ if (!$this->cart->hasProducts() && empty($this->session->data['vouchers'])) {
   //$json['redirect'] = $this->url->link('checkout/cart');
   $json['redirect'] = '/';
 }
+```
+
+### Закрыть паролем
+```
+// .htaccess
+
+AuthType Basic
+AuthName "Admin zone"
+AuthUserFile /sata1/home/users/<project_name>/.htpasswd
+Require valid-use
+
+// .htpasswd (root:123456)
+root:$apr1$6PD30Kac$b9.ZSDiC/HQguA4vxVlv30
+
 ```
 
 ### Get link to category image and resize

@@ -4,6 +4,8 @@
 
 - 
 
+### Can I make all out of stock items show last?
+https://forum.opencart.com/viewtopic.php?t=161016
 
 ### Quick checkout redirect when 0 products
 ```php
